@@ -94,6 +94,11 @@ SELECT * FROM STG_PAN_NUMBERS_DATASET WHERE PAN_NUMBER ~ '^[A-Z]{5}[0-9]{4}[A-Z]
 
 
 
+SELECT * 
+FROM STG_PAN_NUMBERS_DATASET 
+WHERE SUBSTRING(PAN_NUMBER,1,1) NOT IN ('A','B','C','F','G','H','J','L','P','T');
+
+
 
 --  Valid and Invalid PAN categorization
 
