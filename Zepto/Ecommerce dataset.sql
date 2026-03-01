@@ -152,3 +152,70 @@ order by total_inventory;
 
 
 
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-- 🛒 Product & Pricing    
+
+	Select * from zepto;
+
+-- 1. Which products have the highest absolute discount amount?
+
+select max(mrp*discountpercent) from zepto;
+
+-- 2. Which products have discounted price greater than or equal to MRP (possible data errors)?
+
+-- 3. What are the top 5 cheapest products per gram?
+
+-- 4. Which products have unusually low discounts (less than 1%)?
+
+-- 5. Which products have the biggest gap between MRP and discounted price?
+
+📦 Inventory & Stock
+
+1. Which categories have the highest total stock value (discounted price × quantity)?
+
+2. Which categories have the most out-of-stock products?
+
+3. What are the top 10 products by total inventory weight?
+
+4. Which products have zero available quantity but are not marked as out of stock?
+
+5. Which products have the highest inventory value loss due to discounting?
+
+📊 Category Insights
+
+1. Which categories have the maximum average MRP?
+
+2. Which categories contribute the most to overall inventory weight?
+
+3. Which categories have the highest number of unique products?
+
+4. Which categories offer the lowest average discount?
+
+5. Which categories have the widest price range (max - min MRP)?
+
+🔥 Business KPIs
+
+1. What are the top 5 products by potential revenue (MRP × quantity)?
+
+2. What are the top 5 products by actual revenue (discounted price × quantity)?
+
+3. What is the average discount percentage per category compared to overall average?
+
+4. Which products generate the highest revenue per gram?
+
+5. Which products have the fastest potential sell-out value (inventory × price per unit)?
+
+
+
+
+
+
+
+
